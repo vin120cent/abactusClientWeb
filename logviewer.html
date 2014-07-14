@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log viewer</title>
+    <meta charset="utf-8" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body style="background:#eef;">
+    <div class="container" id="log_container" style="margin-top: 50px;"></div>
+    <div class="container"><a href="javascript:void(0)" style="display: block; margin-top: 20px;" class="alert alert-info text-center" id="page_next">Load more</a></div>
+    <script type="text/javascript">
+        var lines;
+        var current_page = 1;
+        prev_diff = -1;
+        function getFile(file){
+            $.get(file).done(function(data) {
+                lines = data.split("\n");
+                loadPage(lines, 100, 1);
+                $("#page_next").click(function() { current_page++; loadPage(lines, 100, current_page)});
+            });
+        }
+        function loadPage(lines, log_per_page, page) {
+            
+            for (var i = lines.length - (page*log_per_page) + log_per_page - 1; i >= lines.length - (page*log_per_page); i--) {
+                if(i <= 0)	break;
+                logentry = JSON.parse(lines[i-1]);
+                switch(logentry.tag) {
+                    case "INFO": classtag = "info"; break;
+                    case "DEBUG": classtag = "warning"; break;
+                    default : classtag = "danger";
+                }
+                d = logentry.time.replace("_", "-");
+                d = d.split("-");
+                date = new Date(d[2], (d[1] - 1), d[0], d[3], d[4], d[5]);
+                diff = Math.round(Math.abs((date.getTime() - new Date())/(3600*24*1000)));
+                if(diff != prev_diff || diff == -1) {
+                    switch(diff) {
+                        case 0:     $('#log_container').append('<h2>Today</h2>'); break;
+                        case 1:     $('#log_container').append('<h2>Yesterday</h2>'); break;
+                        default:     $('#log_container').append('<h2>'+diff+' days ago</h2>');
+                    }
+                }
+                prev_diff = diff;                
+                $('#log_container').append('<div style="margin-top: 5px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px;" class="alert alert-'+classtag+'">['+(i)+'] ['+logentry.time+'] '+logentry.msg+'</div>');
+            }
+        }
+        $(document).ready(function() {
+            getFile("gamelog.txt");	
+        });
+    </script>
+</body>
+</html>
+ 

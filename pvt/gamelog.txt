@@ -1,0 +1,82 @@
+{"time":"25-06-2014_14-23-01","tag":"INFO","msg":"Initialization of log"}
+{"time":"25-06-2014_14-23-01","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"25-06-2014_14-23-01","tag":"INFO","msg":"InitWebSocket"}
+{"time":"25-06-2014_14-23-01","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"25-06-2014_14-23-01","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_11-46-14","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_11-46-14","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_11-46-14","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_11-46-14","tag":"DEBUG","msg":"Error in the creation of the serverSocket in ListenerServerSocket.java"}
+{"time":"30-06-2014_11-46-14","tag":"ERROR","msg":"java.net.PlainSocketImpl.socketBind(Native Method)\njava.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)\njava.net.ServerSocket.bind(ServerSocket.java:376)\njava.net.ServerSocket.<init>(ServerSocket.java:237)\njava.net.ServerSocket.<init>(ServerSocket.java:128)\npackServer.ListenerServerSocket.<init>(ListenerServerSocket.java:27)\npackServer.WebSocketServer.InitWebSocket(WebSocketServer.java:23)\npackServer.WebSocketServer.<init>(WebSocketServer.java:16)\npackServer.WebSocketServer.main(WebSocketServer.java:45)\n"}
+{"time":"30-06-2014_11-46-14","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_11-46-14","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_11-46-50","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_11-46-50","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_11-46-50","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_11-46-50","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_11-46-50","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-03-17","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_12-03-17","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_12-03-17","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_12-03-17","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_12-03-17","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-05-31","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_12-05-31","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_12-05-31","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_12-05-31","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_12-05-31","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-06-16","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_12-06-16","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_12-06-16","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_12-06-16","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_12-06-16","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-06-47","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_12-06-47","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_12-06-47","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_12-06-47","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_12-06-47","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-08-54","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_12-08-54","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_12-08-54","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_12-08-54","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_12-08-54","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-11-28","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 0"}
+{"time":"30-06-2014_12-13-37","tag":"ERROR","msg":"Error in sendGameInfosToWebserver method : Array"}
+{"time":"30-06-2014_12-14-46","tag":"INFO","msg":"Initialization of log"}
+{"time":"30-06-2014_12-14-46","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"30-06-2014_12-14-46","tag":"INFO","msg":"InitWebSocket"}
+{"time":"30-06-2014_12-14-46","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"30-06-2014_12-14-46","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"30-06-2014_12-21-42","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 0"}
+{"time":"30-06-2014_12-21-48","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 1"}
+{"time":"30-06-2014_12-22-25","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 2"}
+{"time":"30-06-2014_12-22-54","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 3"}
+{"time":"30-06-2014_12-25-49","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 4"}
+{"time":"30-06-2014_12-34-45","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 5"}
+{"time":"30-06-2014_12-35-03","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 6"}
+{"time":"30-06-2014_12-35-53","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 7"}
+{"time":"30-06-2014_12-36-08","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 8"}
+{"time":"30-06-2014_12-36-29","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 9"}
+{"time":"30-06-2014_12-39-54","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 10"}
+{"time":"30-06-2014_12-43-55","tag":"ERROR","msg":"Error in sendGameInfosToWebserver method : Array"}
+{"time":"30-06-2014_12-45-05","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 12"}
+{"time":"30-06-2014_13-52-38","tag":"ERROR","msg":"Error in sendGameInfosToWebserver method : Array"}
+{"time":"30-06-2014_14-10-23","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 11"}
+{"time":"30-06-2014_14-32-13","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 13"}
+{"time":"01-07-2014_10-07-48","tag":"INFO","msg":"Initialization of log"}
+{"time":"01-07-2014_10-07-48","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"01-07-2014_10-07-48","tag":"INFO","msg":"InitWebSocket"}
+{"time":"01-07-2014_10-07-48","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"01-07-2014_10-07-48","tag":"INFO","msg":"ListenerServerSocket RUN"}
+{"time":"01-07-2014_10-37-23","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 0"}
+{"time":"01-07-2014_10-40-45","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 1"}
+{"time":"01-07-2014_10-41-49","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 2"}
+{"time":"01-07-2014_10-58-32","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 3"}
+{"time":"01-07-2014_10-59-43","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 5"}
+{"time":"01-07-2014_11-00-00","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 6"}
+{"time":"01-07-2014_11-00-28","tag":"INFO","msg":"ConnectionWebSocket Socket disconnected 4"}
+{"time":"01-07-2014_17-49-38","tag":"INFO","msg":"Initialization of log"}
+{"time":"01-07-2014_17-49-38","tag":"INFO","msg":"Initialization of ServerController"}
+{"time":"01-07-2014_17-49-38","tag":"INFO","msg":"InitWebSocket"}
+{"time":"01-07-2014_17-49-38","tag":"INFO","msg":"Initialization of WebSocketServer"}
+{"time":"01-07-2014_17-49-38","tag":"INFO","msg":"ListenerServerSocket RUN"}

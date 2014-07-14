@@ -1,0 +1,33 @@
+ServerSignature Off
+
+ErrorDocument 404 /404.php
+
+RewriteEngine On    # Turn on the rewriting engine
+
+RewriteRule ^assets/(.*)$ assets/$1 [L]
+RewriteRule ^views/(.*)$ views/$1 [L]
+RewriteRule ^uploads/(.*)$ uploads/$1 [L]
+RewriteRule ^ajax/([a-zA-Z_]*)/([a-zA-Z_]*)/([^\/]*)?$ index_ajax.php?section=$1&action=$2&$3 [L,QSA]
+RewriteRule ^user/profile/([a-zA-Z0-9\-]{4,})/(.*)?$ index.php?section=user&action=profile&user=$1 [L,QSA]
+RewriteRule ^user/profile/([a-zA-Z0-9\-]{4,})?$ index.php?section=user&action=profile&user=$1 [L,QSA]
+RewriteRule ^user/avatar/([a-zA-Z0-9\-]{4,})/(large|medium|small)/(.*)?$ index_ajax.php?section=user&action=avatar&user=$1&size=$2 [L,QSA]
+RewriteRule ^user/avatar/([a-zA-Z0-9\-]{4,})/(large|medium|small)$ index_ajax.php?section=user&action=avatar&user=$1&size=$2 [L,QSA]
+RewriteRule ^user/avatar/([a-zA-Z0-9\-]{4,})/(.*)?$ index_ajax.php?section=user&action=avatar&user=$1 [L,QSA]
+RewriteRule ^([a-zA-Z_]*)/([a-zA-Z_]*)/(\?[^\/]*)?$ index.php?section=$1&action=$2&$3 [L,QSA]
+RewriteRule ^user/([a-zA-Z_]*)(\?[^\/]*)?$ index.php?section=user&action=$1&$2 [L,QSA]
+RewriteRule ^friend/([a-zA-Z_]*)(\?[^\/]*)?$ index.php?section=friend&action=$1&$2 [L,QSA]
+RewriteRule ^game/([a-zA-Z_]*)(\?[^\/]*)?$ index.php?section=game&action=$1&$2 [L,QSA]
+
+
+# Mise en cache des images pour 365 jours
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+Header set Cache-Control	"max-age=31636000, public"
+</FilesMatch>
+#Fin mise en cache 
+
+# Mise en cache des scripts pour 15 jours
+<FilesMatch "\.(js|css)$">
+Header set Cache-Control	"max-age=1296000, public"
+Header set ExpiresDefault	"access plus 15 day"
+</FilesMatch>
+#Fin mise en cache 

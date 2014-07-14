@@ -1,0 +1,50 @@
+<form action="#" class="form_create_room" autocomplete="off">
+	<legend>Nouvelle partie</legend>
+
+
+	<input type="text" placeholder="Nom de partie" name="roomName" autocomplete="off">
+
+	 <select name="roomType">		
+		<option value="normal">Mode multi-joueurs</option>
+		<option value="robot">Seul contre un robot</option>
+	</select>
+
+	<div class="form_create_room-all">
+		<input type="text" placeholder="Mot de passe (optionnel)" name="roomMdp" autocomplete="off">
+	</div>
+	<select name="boardRadius">
+		<option value="5">Plateau de rayon 5</option>
+		<option value="6">Plateau de rayon 6</option>
+		<option value="7">Plateau de rayon 7</option>
+		<option value="8">Plateau de rayon 8</option>
+		<option value="9">Plateau de rayon 9</option>
+		<option value="10">Plateau de rayon 10</option>
+		<option value="11">Plateau de rayon 11</option>
+	</select>
+	<div class="form_create_room-all">
+		<select name="nbPlayers">
+			<option value="2">2 joueurs</option>
+			<option value="3">3 joueurs</option>
+			<option value="4">4 joueurs</option>
+			<option value="6">6 joueurs</option>
+		</select> <select name="nbTeams">
+			<option value="2">2 équipes</option>
+			<option value="3" disabled="disabled">3 équipes</option>
+		</select>
+	</div>
+	<select name="nbLegions">
+		<option value="1">1 légion par joueur</option>
+		<option value="2">2 légion par joueur</option>
+		<option value="3" selected="selected">3 légion par joueur</option>
+	</select> <select name="timer">
+		<option value="5">5 secondes par tour</option>
+		<option value="10">10 secondes par tour</option>
+		<option value="15">15 secondes par tour</option>
+		<option value="20">20 secondes par tour</option>
+		<option value="25">25 secondes par tour</option>
+		<option value="30" selected="selected">30 secondes par tour</option>
+		<option value="45">45 secondes par tour</option>
+		<option value="60">1 minute par tour</option>
+	</select> <input type="submit" value="Valider">
+	<button class="form_create_room-cancel">Annuler</button>
+</form>
